@@ -1,0 +1,128 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <link href="css/portfolio.css" type="text/css" rel="stylesheet">
+
+
+  <title>Marcus Toman Resume</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Marcus Toman</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin">Admin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- Header -->
+  <header class="bg-primary py-5  ">
+    <div class="container h-25">
+      <div class="row h-100 align-items-center ">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-5 mb-2">Tere!</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <header class="text-center bg-primary">
+    <div class="container">
+      
+    <div class="container">
+      <img class="img-fluid d-block mx-auto mb-5" src="<%= myDatas[myDatas.length-1].imageUrl %>">
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 mb-5">
+        <h2 class="text-uppercase text-left text-muted">My personal info:</h2>
+        <p class="lead text-center" style="width: 800px;">
+          <%= myDatas[myDatas.length-1].personalinfo %> <br>
+            <hr>
+            <p></p>
+
+      </div>
+
+
+
+
+      <div class="container" style="width: 960px;max-width: 800px;">
+
+        <hr class="star-light mb-5">
+        <h2 class="text-uppercase text-center text-muted">My education</h2>
+        <div class="row">
+          <div class="col-lg-11" style="width: 800px;">
+            <p class="lead text-center" style="width: 800px;">
+              <%= myDatas[myDatas.length-1].education %> <br>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="width: 960px;max-width: 800px;">
+
+        <hr class="star-light mb-5">
+        <h2 class="text-uppercase text-center text-muted">My technical skills</h2>
+        <div class="row">
+          <div class="col-lg-11" style="width: 800px;">
+            <p class="lead text-center" style="width: 800px;">
+              <%= myDatas[myDatas.length-1].technical_skills %> <br>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" style="width: 960px;max-width: 800px;">
+
+        <hr class="star-light mb-5">
+        <h2 class="text-uppercase text-center text-muted">My soft skills</h2>
+        <div class="row">
+          <div class="col-lg-11" style="width: 800px;">
+            <p class="lead text-center" style="width: 800px;">
+              <%= myDatas[myDatas.length-1].soft_skills %> <br>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-white">
+      <div class="container">
+        <p class="m-0 text-center text-dark"> &copy; Marcus Toman 2022</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+
+
+</body>
+
+</html>

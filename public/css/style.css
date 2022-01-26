@@ -1,0 +1,15 @@
+body {
+    padding-top: 56px;
+  }
+  .container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('img/joshik1.jpg');
+  }
+  .navbar{
+    margin-bottom: 100px;
+  }
+ul{
+  text-decoration:none;
+  list-style: none;
+}
